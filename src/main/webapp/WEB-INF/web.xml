@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:javaee="http://java.sun.com/xml/ns/javaee" 
+	 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+
+	  
+	 <servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>LoginCheckServlet</servlet-class>
+	
+		<servlet-name>Welcome</servlet-name>
+		<servlet-class>WelcomeServlet</servlet-class>
+		</servlet>
+	<servlet>
+		<servlet-name>Cin</servlet-name>
+		<servlet-class>CarInsertionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SignUp</servlet-name>
+		<servlet-class>SignUpCheck</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Cde</servlet-name>
+		<servlet-class>CarDeletionservlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Books</servlet-name>
+		<servlet-class>book</servlet-class> 
+	</servlet>
+	<servlet>
+		<servlet-name>Book_html</servlet-name>
+		<servlet-class>bookhtml</servlet-class> 
+	</servlet>
+	<servlet>
+		<servlet-name>get_touch</servlet-name>
+		<servlet-class>GetInTouchserv</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>get-touch</servlet-name>
+		<servlet-class>GetInTouchser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUp</servlet-name>
+		<url-pattern>/SignUpCheck</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/LoginCheckServlet</url-pattern>
+
+		<servlet-name>Welcome</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+		
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Books</servlet-name>
+		<url-pattern>/book1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Book_html</servlet-name>
+		<url-pattern>/book2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>get_touch</servlet-name>
+		<url-pattern>/getintouch</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>get-touch</servlet-name>
+		<url-pattern>/get_in_touch</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Cin</servlet-name>
+		<url-pattern>/car_insert</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Cde</servlet-name>
+		<url-pattern>/car_delete</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+   <welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+  
+</web-app>

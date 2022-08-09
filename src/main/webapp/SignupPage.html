@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <title>Signup Page | Rent a Go-Car</title>
+    <link rel = "icon" href="logo.png" type = "image/png">
+    <style>
+        .closebutton{text-align: right;}
+        .closebutton a{color: black;text-decoration: none;}
+        .signupbox{border-bottom: 1px solid gray;padding: 20px;margin-left: auto;margin-right: auto; max-width: 325px;}
+        .heading{text-align: center;}
+        .signupbox p1{text-align : center;font-size: 50px;}
+        .signupbox p2{text-align : center;font-size: 22px;}
+        .forgot{color:  rgb(153, 148, 155);font-size: 20px;}
+        .heading a{color:  rgb(202, 18, 248);text-decoration: none;}
+        .Loginbt{border:none;width: 295px;background-color: rgb(202, 18, 248);color:white;padding: 13px;font-size: 17px;}
+        .line{max-width: 90%;
+    padding: 5px 0px;
+    margin: 1px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    font-size: 15px;
+    outline:none;
+    outline-color: violet;
+    background: transparent;}
+    .open-button {
+            color: rgb(202, 18, 248);
+            padding: 0px 0px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            
+            
+            }
+
+            .feedback {
+            display: none;
+            }
+
+            .Ratecontainer {
+            padding: 10px;
+            background-color: white;
+            color: black;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .Ratecontainer .btn {
+            color: black;
+            border: none;
+            }
+            .Ratecontainer .fb-btn {
+            cursor: pointer;
+            color: black;
+            border: none;
+            }
+            .Ratecontainer .gm-btn {
+            cursor: pointer;
+            color: black;
+            border: none;
+            }
+
+
+        </style>
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+                }
+
+            function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+</head>
+<body>
+    <br><br><br>
+    <div class="closebutton">
+        <button ><a href = "HomePage.html"><b>X</b></a></button>
+    </div>
+
+    <form action="SignUp" method="post">
+        <div class="signupbox">
+            <div class = "heading">
+            <p1 >Sign Up </p1>
+            <br><br>
+            <p2>Do You have an account? <a href = "login.html">Log In</a></p2>
+            </div>
+            <br><br><br>
+            <label for="Username"><p2>Email or Phone Number</p2> </label>
+            <br>
+            <input type="text" id="Username" name="Username" class = "line" size = 35 required>
+            <br><br>
+            <label for="Password"><p2>Password</p2> </label><br>
+            <input type="password" id="Password" name="Password" class = "line" size =35 maxlength="16" minlength="8" required>
+            <br><br><br>
+            <label for="C-Password"><p2>Confirm Password</p2> </label><br>
+            <input type="password" id="C-Password" name="C-Password" class = "line" size =35 maxlength="16" minlength="8" required>
+            <br><br><br>
+            <button  class = "Loginbt"><a href ="login.html" ></a></button> 
+            <br><br>
+        </div>
+        
+    </form>
+    <div class="Social" style="text-align: center;">
+        <button class="open-button" onclick="openForm()">More Options</button>
+    <div class="feedback" id="myForm">
+        <form  class="Ratecontainer">
+            <button type="button" class="fb-btn"><img src="fb-logo.png" height="50" width="50"></button>
+            <button type="button" class="gm-btn"><img src="google-logo.png" height="50" width="50"></button><br>
+            <button type="submit" class="btn">close</button>
+        </form>
+    </div>
+    </div>
+</body>

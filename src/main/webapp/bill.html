@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book</title>
+    <meta charset="utf-8">
+    <style>
+       *{margin: 0;padding: 0;}
+       .home_top{text-align: center;background-color:black;color: white;}
+       .bill{background-image:linear-gradient(to right,#c6ffdd,#fbd786,#f7797d);color: black;padding: 100px 500px;display: flex;}
+       .tb{ background-color:whitesmoke;border-radius:10px;padding: 10px 20px;width: 40%;width: 350px;height: 250px;}
+    </style>
+  </head>
+  <body >
+    <div class = home_top>
+      <br><br>
+      <img src ="logo.png" height="70" width="70">
+      <p><div class = logodown >Rent a Go-Cart</div>Your Key for rental car<br> '</p>
+  </div> 
+  <div class="bill" >
+    <form  action = "Books" method="post">
+    <table class = "tb">
+      <tr>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" name="name" id="name" required></td>
+      </tr>
+      <br><br>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" name="email" id="email" required></td>
+      </tr>
+      <!-- Linsnce number-->
+      <tr>
+        <td><label for="lnumber">License Number</label></td>
+        <td><input type="text" name="lnumber" id="lnumber" required></td>
+      </tr>
+      <!-- time and date of the solt booking-->
+      <tr>
+        <td><label for="date">Date</label></td>
+        <td><input type="date" name="date" id="date" required></td>
+      </tr>
+      <tr>
+        <td><label for="time">Time</label></td>
+        <td><input type="time" name="time" id="time" required></td>
+      </tr>
+      <tr>
+        <td>Cost : </td>
+        <td>19.99$</td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Pay Now"></td>
+      </tr>
+    </table>
+    </form>
+  </div>
+  </body>
+</html>

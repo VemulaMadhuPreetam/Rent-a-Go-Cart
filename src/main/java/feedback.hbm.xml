@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	
+	<class name="feedback" table = "feedback">
+		<id name = "fid" column = "fid"></id>
+		<property name="email" column="email"></property>
+		<property name="name"></property>
+		<property name="subject"></property>
+		<property name = "message"></property>
+	</class>
+	
+</hibernate-mapping>

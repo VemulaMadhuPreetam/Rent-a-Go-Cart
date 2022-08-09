@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home | Rent a Go-Car</title>
+        <link rel = "icon" href="logo.png" type = "image/png">
+        <style>
+        *{margin: 0;padding: 0;}
+        body{background-image: url(back.png);background-attachment: fixed;background-repeat: no-repeat;background-size: cover;}
+        footer{color: whitesmoke;text-align: center;background-color: rgb(26,29,35);line-height: 1.8;padding: 30px 0px;}
+        .home_top{text-align: center;background-color:black;color: white;}
+        .logodown{font-size: 28px;padding: 10px;}
+        .tb_middle{overflow: hidden;text-align: center;background-color: white;padding: 10px 0px;}
+        .tb_middle a{color: black;text-decoration: none;padding: 0px 5px;}
+        .tb_middle a.right{float:right;padding: 0px 20px;}
+        .tb_middle a:hover{background-color: white;color: red;}
+        .Main{background-color: black;color: white;padding: 100px 50px;display: flex;}
+        .Main img{object-fit: cover;box-shadow: 20px 20px;padding: 0px;position: relative;animation: mytp 1s;animation-fill-mode: forwards;overflow: hidden;}
+        .Main p{padding: 50px 0px;animation: myname 1s ;position: relative;animation-fill-mode: forwards;}
+        .Main button{padding: 14px 20px;}
+        .SubMain{width: 50%;}
+        .HomeCars{background-color: black;color: white;padding: 100px 50px;display: flex;}
+        .HomeCar{width: 33%;border-style: solid;border-color: white;border-width: 1px;width: 360px;height: 650px;}
+        .HomeCar p{font-size: 30px;padding: 0px 30px;}
+        .HomeCar p1{font-size: 20px;padding: 0px 30px;}
+        .HomeCar button{font-size: 16px;padding: 10px 25px;background-color: #db203f;border-width: 0px;cursor: pointer;}
+        .SubGet{width: 50%;}
+        .Get{background-color: black;color: white;padding: 100px 100px;display: flex;line-height: 2;}
+        .ABOUT_US{padding: 220px 200px;}
+        .aboutus{background-color: white;padding: 50px 80px;line-height: 2;}
+        .Get .p1{padding: 100px 600px;text-align: center;margin-left: auto;margin-right: auto;}
+        @keyframes mytp{
+            from {top: -100px;}
+            to {top: 0px;}
+        }
+        @keyframes myname {
+            from {margin-inline-start: -1000px;}
+            to {left: 0px;}
+        }
+        </style>
+    </head>
+    <body>
+        <div class = home_top>
+        <br><br>
+        <img src ="logo.png" height="70" width="70">
+        <p><div class = logodown >Rent a Go-Car</div>Your Key for rental car<br> '</p>
+        </div>        
+        <div class = "tb_middle">
+            <a href = HomePage.html >  Home</a>
+            <a href = "BookOnline.jsp" >Book Online</a>
+            <a href = "OurVehicles.jsp">Our Vehicles</a>
+            <a href = "AboutUS.html">About</a>
+            <a href = "GetInTouch.html">Get In Touch</a>
+            
+            <a href = login.html class = "right"><img src ="d2.png" height="17" class="right">Yash</a>
+        </div>
+        <div class="Main">
+            <div class = "SubMain" >
+                <p style="font-size: 72px;">Rent a Go-Car<br>Welcomes you</p>
+                <p style="font-size: 20px;">Book the Absolute Best</p>
+                <a href = "BookOnline.jsp" class="button" ><button>Book Now</button></a>
+            </div>
+            <div class="SubMain">
+                <img src = "home1.png">
+            </div>
+        </div>
+        <p style="font-size: 72px;color: white;background-color: black;">&emsp;Top Cars<br></p>
+        <div class="HomeCars">
+            &emsp;&emsp;
+            <div class="HomeCar">
+                <img src = "car1.png">
+                <p>2013 Convertible <br>____________________<br></p>
+                <p1>1 hr</p1>
+                <br><br>
+                <p1>$19.99</p1>
+                <br><br>&emsp;&nbsp;&nbsp;
+                <button> Book Now</button>
+            </div>
+            &emsp;&emsp;
+            <div class="HomeCar">
+                <img src = "car2.png">
+                <p>2013 Convertible<br>____________________<br></p>
+                <p1>1 hr</p1>
+                <br><br>
+                <p1>$19.99</p1>
+                <br><br>&emsp;&nbsp;&nbsp;
+                <button> Book Now</button>
+            </div>
+            &emsp;&emsp;
+            <div class="HomeCar">
+                <img src = "car3.png">
+                <p>2013 Convertible<br>____________________<br></p>
+                <p1>1 hr</p1>
+                <br><br>
+                <p1>$19.99</p1>
+                <br><br>&emsp;&nbsp;&nbsp;
+                <button> Book Now</button>
+            </div>
+            &emsp;&emsp;
+        </div>
+        <div class = "ABOUT_US">
+            <div class="aboutus">
+                <div class="king" style="padding-bottom: 20px;">
+                <p style="font-size: 35px;color: blueviolet;"><b>About Us</b></p>
+                </div>
+                <p>
+                Our Car Rental Company was founded in 2000, and has been bringing a wide selection of 
+                best-in-class rentals to our customers ever since. Our business name has become synonymous 
+                with high-quality and excellent service throughout the San Francisco area.
+                <br>
+                <br>
+                We do our best to provide a safe and convenient option for vehicle rental to fit every budget. 
+                We’re driven by our dedication to find the best solution for your travel or shipping needs, 
+                whatever they may be. Get in touch with us to learn more about our selection and the rental 
+                services we offer.
+                </p>
+            </div>
+        </div>
+        <div class="Get">
+            <div class = "SubGet" >
+                <img src = "get-in-touch.png">
+            </div>
+            <div class="SubGet">
+                <p style="text-align: center; font-size: 40px;padding-top: 100px;">Get in Touch</p>
+                <p style="text-align: center;">We’re happy to help you plan your next trip, just give us a call or send </p>
+                <p style="text-align: center;">us a note.</p>
+                <div style="padding: 15px;">
+                    <p style="text-align: center;">StellaEsthas</p>
+                    <p style="text-align: center;">gocar@gmail.com</p>
+                    <p style="text-align: center;">999999999</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>gocar@gmail.com</p>
+        <p>999999999</p>
+        <div class="buttons" >
+            <button type="button" style="border-radius:20px ;"><img src="fb1.png" height="25" width="25"></button>
+            <button type="button"><img src="footer-insta.png" height="30" width="30"></button>
+        </div>
+        <p><br>&copy;2021 by Rent a Go-Car.</p>
+    </footer>
+    
+</html>

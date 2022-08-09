@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get in Touch | Rent a Go-Car</title>
+        <link rel = "icon" href="logo.png" type = "image/png">
+        <style>
+            *{margin: 0;padding: 0;}
+            footer{color: whitesmoke;text-align: center;background-color: rgb(26,29,35);line-height: 1.8;padding: 30px 0px;}
+            .home_top{text-align: center;background-color:black;color: white;}
+            .logodown{font-size: 28px;padding: 10px;}
+            .tb_middle{overflow: hidden;text-align: center;background-color: white;padding: 10px 0px;}
+            .tb_middle a{color: black;text-decoration: none;padding: 0px 5px;}
+            .tb_middle a.right{float:right;padding: 0px 20px;}
+            .tb_middle a:hover{background-color: white;color: red;}
+            .GetIn{background-color: black;display: flex;color: white;padding: 75px 75px;}
+            .SubGetIn{width: 50%;}
+            .SubGetIn .btn{padding: 15px 40px;}
+            .SubGetIn .high{background-color: transparent;border-color: white;max-width: 100%;width: 100%;padding: 20px 10px;color:white;}
+            .SubGetIn .high1{background-color: transparent;border-color: white;max-width: 100%;width: 100%;padding: 0px 10px;padding-bottom: 80px;padding-top: 10px;color:white;}
+            .SubGetIn img{background-color: black;}
+        </style>
+    </head>
+    <body>
+        <div class = home_top>
+            <br><br>
+            <img src ="logo.png" height="70" width="70">
+            <p><div class = logodown >Rent a Go-Cart</div>Your Key for rental car<br> '</p>
+        </div> 
+        <div class = "tb_middle">
+            <a href = HomePage.html >  Home</a>
+            <a href = "BookOnline.jsp" >Book Online</a>
+            <a href = "OurVehicles.jsp">Our Vehicles</a>
+            <a href = "AboutUS.html">About</a>
+            <a href = "GetInTouch.html">Get In Touch</a>
+            <!--  <a href = LoginPage.html class = "right"><img src ="d2.png" height="17" class="right">Log In </a> -->
+        </div>
+        <div class="GetIn">
+            <div class = "SubGetIn">
+                <img src = "get-in-touch.png">
+            </div>
+            <div class = "SubGetIn" style="padding: 75px 75px;">
+                <h1 style="text-align: center;">Get in Touch</h1>
+                <form action="get-touch" method = "post">
+                	<label for = "name">Name*</label><br>
+                	<input type = "text" id="name" name = "name" placeholder="Enter Your name" class="high" maxlength="100" required><br>
+                	<label for = "email">Email*</label><br>
+                	<input type = "email" id="email" name = "email" placeholder="Enter Your email" class="high" required><br>
+                	<label for = "subject">Subject*</label><br>
+                	<input type = "text" id="subject" name = "subject" placeholder="Enter Your Subject" class="high" required><br>
+                	<label for = "message">Message*</label><br>
+                	<textarea  id="message" name = "message" placeholder="Enter Your Text here..." class="high1" required></textarea>
+                	<button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>        
+    </body>
+    <footer>
+        <p>gocar@gmail.com</p>
+        <p>999999999</p>
+        <div class="buttons">
+            <button type="button"><img src="footer-fb.png" height="30" width="30"></button>
+            <button type="button"><img src="footer-insta.png" height="30" width="30"></button>
+        </div>
+        <p><br>&copy;2021 by Rent a Go-Car.</p>
+    </footer>
+</html>
